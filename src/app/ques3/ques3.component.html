@@ -1,0 +1,17 @@
+
+ <form [formGroup]="adinput" (ngSubmit)="submit()">
+
+
+  <div formArrayName="itemRows">
+<div *ngFor="let itemrow of adinput.controls.itemRows['controls']; let i=index" [formGroupName]="i">
+    <div class="form-group" >
+        <label for="exampleInputEmail1">phone no</label>
+        <input type="text" formControlName="phonenum" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter number">
+        <button type="submit"  *ngIf="adinput.controls.itemRows.controls.length > 1" (click)="deleteRow(i)" class="btn btn-primary">Delete</button>
+      </div>
+</div>
+<button type="button" (click)="addNewArray()" class="btn btn-primary">Add another phone number</button>
+  </div>
+</form>
+
+<button type="submit"    style="margin-top: 20px;background-color:green"  (click)="submit()" class="btn btn-primary">Submit</button>
