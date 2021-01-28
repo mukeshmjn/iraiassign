@@ -7,9 +7,9 @@ import { Ques1Component } from './ques1/ques1.component';
 import { Ques3Component } from './ques3/ques3.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HomeModule } from './home/home.module';
-import { XComponent } from './ques4/x/x.component';
-import { YComponent } from './ques4/y/y.component';
-import { ZComponent } from './ques4/z/z.component';
+import { XComponent } from './ques2/x/x.component';
+import { YComponent } from './ques2/y/y.component';
+import { ZComponent } from './ques2/z/z.component';
 
 @NgModule({
   declarations: [
