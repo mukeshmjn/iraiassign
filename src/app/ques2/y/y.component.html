@@ -1,6 +1,6 @@
 <div class="form-group">
-    <label for="exampleInputEmail1">Email text</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter text">
+    <label for="exampleInputEmail1">Y component</label>
+    <input type="email" class="form-control" [(ngModel)]="ycom" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter text in Y input">
     
   </div>
-  <button type="submit" class="btn btn-primary">Save</button>
+  <button type="submit" class="btn btn-primary" (click)="sub()">Save</button>

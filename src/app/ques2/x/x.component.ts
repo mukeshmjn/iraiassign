@@ -8,7 +8,7 @@ import {YComponent} from '../y/y.component'
 export class XComponent implements OnInit {
   @ViewChild("alertContainer", { read: ViewContainerRef }) container;
   componentRef: ComponentRef<any>;
-  
+  xcom: any
    constructor(private resolver: ComponentFactoryResolver) {}
    createComponent(){
     const factory: ComponentFactory<any> = this.resolver.resolveComponentFactory(YComponent);
@@ -16,6 +16,9 @@ export class XComponent implements OnInit {
  
 
    
+   }
+   sub(){
+     console.log('X name:',this.xcom)
    }
 
    ngOnDestroy() {

@@ -8,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class YComponent implements OnInit {
 
   constructor() { }
-
+ycom:any
   ngOnInit(): void {
   }
-
+sub(){
+  console.log('Text in Y:',this.ycom)
+}
 }
